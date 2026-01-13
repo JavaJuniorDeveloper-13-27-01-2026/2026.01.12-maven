@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${pageTitle}">Kontakt</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/kontakt.css}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h1>Skontaktuj się z nami</h1>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon">🏢</div>
+                    <h3>Firma</h3>
+                    <p th:text="${companyName}">Comarch Szkolenia</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon">📧</div>
+                    <h3>Email</h3>
+                    <p th:text="${email}">kontakt@comarch-szkolenia.pl</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon">📱</div>
+                    <h3>Telefon</h3>
+                    <p th:text="${phone}">+48 123 456 789</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon">📍</div>
+                    <h3>Adres</h3>
+                    <p th:text="${address}">ul. Przykładowa 123, 00-001 Warszawa</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <h2 style="color: #764ba2; margin-bottom: 1rem;">Godziny otwarcia</h2>
+                <p style="font-size: 1.1rem;">Poniedziałek - Piątek: 9:00 - 17:00</p>
+                <p style="font-size: 1.1rem;">Sobota - Niedziela: Zamknięte</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Comarch Szkolenia. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
+

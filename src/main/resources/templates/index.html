@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${pageTitle}">Strona Główna</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="hero">
+                <h1 th:text="${welcomeMessage}">Witamy na naszej stronie!</h1>
+                <p>Jesteśmy firmą specjalizującą się w szkoleniach IT</p>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <h2 style="color: #764ba2; margin-bottom: 1rem;">O nas</h2>
+                <p>
+                    Oferujemy profesjonalne szkolenia z zakresu technologii Java, Spring Boot,
+                    oraz wielu innych nowoczesnych frameworków i narzędzi programistycznych.
+                </p>
+                <p>
+                    Nasi wykładowcy to doświadczeni programiści z wieloletnim stażem w branży IT,
+                    którzy chętnie dzielą się swoją wiedzą i praktyką.
+                </p>
+                <p>
+                    Zapraszamy do zapoznania się z naszą ofertą i skontaktowania się z nami!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Comarch Szkolenia. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
+
