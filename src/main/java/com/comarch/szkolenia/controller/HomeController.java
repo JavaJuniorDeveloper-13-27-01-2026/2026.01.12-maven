@@ -36,6 +36,10 @@ public class HomeController {
         }
 
         return (double) suma / liczby.length;
+
+
+
+        
     }
 }
 
